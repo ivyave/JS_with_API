@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  apache:
+    image: httpd:latest
+    container_name: JS_with_API
+    ports:
+    - '8080:80'
+    volumes:
+    - ./website/src:/usr/local/apache2/htdocs
